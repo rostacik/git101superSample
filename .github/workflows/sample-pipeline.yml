@@ -1,0 +1,43 @@
+name: Sample Pipeline
+
+# Trigger the workflow on pushes and pull requests targeting the main branch,
+# and allow it to be run manually from the Actions tab.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show repository contents
+        run: ls -la
+
+      - name: Simulate build step
+        run: echo "Building the project..."
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Simulate test step
+        run: echo "Running tests..."
+
+  notify:
+    name: Notify
+    runs-on: ubuntu-latest
+    needs: [build, test]
+    steps:
+      - name: Report success
+        run: echo "Build and tests completed successfully!"
