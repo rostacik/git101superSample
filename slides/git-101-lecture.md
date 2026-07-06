@@ -64,7 +64,7 @@ mkdir git-demo && cd git-demo
 # Initialize Git
 git init
 
-# Check status
+# Check status [!67]
 git status
 
 # Create a file
