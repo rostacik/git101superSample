@@ -57,8 +57,6 @@ Working Directory        Staging Area           Repository
 
 ## Slide 4: Your First Repository
 
-### Demo Commands
-
 ```bash
 # Create a folder
 mkdir git-demo && cd git-demo
@@ -88,8 +86,6 @@ git log
 
 ## Slide 5: Making More Changes
 
-### Demo Commands
-
 ```bash
 # Edit README.md
 echo "This is a demo project." >> README.md
@@ -111,7 +107,6 @@ git log --oneline
 
 ## Slide 6: Branching — Working in Parallel
 
-### What is a branch?
 - A branch is a separate line of development.
 - You create a branch to experiment or build a feature without touching the main code.
 
@@ -119,8 +114,6 @@ git log --oneline
 main:     A --- B --- C
                  feature:         D --- E
 ```
-
-### Demo Commands
 
 ```bash
 # Create and switch to a new branch
@@ -174,8 +167,6 @@ git log --oneline --graph --all
 - You want to share it or back it up.
 - You create a remote repository on GitHub and link it.
 
-### Demo Commands
-
 ```bash
 # Add a remote (GitHub URL)
 git remote add origin https://github.com/yourusername/yourrepo.git
@@ -193,10 +184,6 @@ git clone https://github.com/rostacik/git101superSample.git
 
 ## Slide 9: Collaboration Exercise
 
-### Goal
-Every student makes a small change on a branch and pushes it.
-
-### Steps
 1. Clone the sample repo:
    ```bash
    git clone https://github.com/rostacik/git101superSample.git
@@ -282,7 +269,6 @@ node_modules/
 
 ## Slide 14: Summary & Homework
 
-### Today You Learned
 - The 3-area model (working → staging → repository)
 - Local workflow: `init`, `add`, `commit`, `log`
 - Branching: `checkout -b`, `merge`

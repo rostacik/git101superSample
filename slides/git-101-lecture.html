@@ -80,7 +80,6 @@
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="5" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-4-your-first-repository">Slide 4: Your First Repository</h2>
-<h3 id="demo-commands">Demo Commands</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># Create a folder</span>
 <span class="hljs-built_in">mkdir</span> git-demo &amp;&amp; <span class="hljs-built_in">cd</span> git-demo
 
@@ -108,7 +107,6 @@ git <span class="hljs-built_in">log</span>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="6" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-5-making-more-changes">Slide 5: Making More Changes</h2>
-<h3 id="demo-commands-1">Demo Commands</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># Edit README.md</span>
 <span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;This is a demo project.&quot;</span> &gt;&gt; README.md
 
@@ -128,7 +126,6 @@ git <span class="hljs-built_in">log</span> --oneline
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="7" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-6-branching--working-in-parallel">Slide 6: Branching — Working in Parallel</h2>
-<h3 id="what-is-a-branch">What is a branch?</h3>
 <ul>
 <li>A branch is a separate line of development.</li>
 <li>You create a branch to experiment or build a feature without touching the main code.</li>
@@ -136,7 +133,6 @@ git <span class="hljs-built_in">log</span> --oneline
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>main:     A --- B --- C
                  feature:         D --- E
 </code></pre>
-<h3 id="demo-commands-2">Demo Commands</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># Create and switch to a new branch</span>
 git checkout -b feature/about-me
 
@@ -186,7 +182,6 @@ git <span class="hljs-built_in">log</span> --oneline --graph --all
 <li>You want to share it or back it up.</li>
 <li>You create a remote repository on GitHub and link it.</li>
 </ul>
-<h3 id="demo-commands-3">Demo Commands</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash"><span class="hljs-comment"># Add a remote (GitHub URL)</span>
 git remote add origin https://github.com/yourusername/yourrepo.git
 
@@ -202,9 +197,6 @@ git <span class="hljs-built_in">clone</span> https://github.com/rostacik/git101s
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="10" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-9-collaboration-exercise">Slide 9: Collaboration Exercise</h2>
-<h3 id="goal">Goal</h3>
-<p>Every student makes a small change on a branch and pushes it.</p>
-<h3 id="steps">Steps</h3>
 <ol>
 <li>Clone the sample repo:<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-bash">git <span class="hljs-built_in">clone</span> https://github.com/rostacik/git101superSample.git
 <span class="hljs-built_in">cd</span> git101superSample
@@ -310,7 +302,6 @@ node_modules/
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="15" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-14-summary--homework">Slide 14: Summary &amp; Homework</h2>
-<h3 id="today-you-learned">Today You Learned</h3>
 <ul>
 <li>The 3-area model (working → staging → repository)</li>
 <li>Local workflow: <code>init</code>, <code>add</code>, <code>commit</code>, <code>log</code></li>
