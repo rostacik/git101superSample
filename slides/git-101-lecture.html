@@ -11,9 +11,6 @@
 </style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="overview" tabindex="-1" title="Toggle overview view (o)">Toggle overview view</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="1" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h1 id="git-101--introduction-to-version-control">Git 101 — Introduction to Version Control</h1>
 <h2 id="1-hour-lecture-for-college-students">1-Hour Lecture for College Students</h2>
-<blockquote>
-<p><strong>Speaker notes</strong>: This is a demo-heavy lecture. Show the terminal for every command. Keep slides minimal. The goal is to build the mental model, not to memorize flags.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="2" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-1-why-git">Slide 1: Why Git?</h2>
@@ -23,9 +20,6 @@
 <li>You break something and want to go back.</li>
 </ul>
 <h3 id="git-is-a-time-machine-for-your-code">Git is a time machine for your code.</h3>
-<blockquote>
-<p><strong>Speaker notes</strong>: Start with a relatable example (essay, project, or code). Ask who has used &quot;Save As&quot; with version numbers. Emphasize that Git solves the same problem, but systematically.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="3" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-2-git-vs-github">Slide 2: Git vs GitHub</h2>
@@ -59,9 +53,6 @@
 <li><strong>Git</strong> = the tool</li>
 <li><strong>GitHub</strong> = the place where you store and share</li>
 </ul>
-<blockquote>
-<p><strong>Speaker notes</strong>: Many students confuse Git and GitHub. Clarify immediately. Use analogy: Git is the camera, GitHub is the photo album.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="4" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-3-the-3-area-model">Slide 3: The 3-Area Model</h2>
@@ -74,9 +65,6 @@
 <li><strong>Staging Area</strong> — a list of changes you want to save</li>
 <li><strong>Repository</strong> — the permanent history of snapshots</li>
 </ol>
-<blockquote>
-<p><strong>Speaker notes</strong>: This is the most important mental model. Draw it on the board. Do not move on until students can repeat: edit → stage → commit. Everything else in Git is an extension of this idea.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="5" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-4-your-first-repository">Slide 4: Your First Repository</h2>
@@ -101,9 +89,6 @@ git commit -m <span class="hljs-string">&quot;Initial commit: add README&quot;</
 <span class="hljs-comment"># View history</span>
 git <span class="hljs-built_in">log</span>
 </code></pre>
-<blockquote>
-<p><strong>Speaker notes</strong>: Live demo from scratch. Talk out loud as you type. Explain <code>git status</code> color codes (red = modified, green = staged). Show <code>git log</code> output immediately so they see history exists.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="6" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-5-making-more-changes">Slide 5: Making More Changes</h2>
@@ -120,9 +105,6 @@ git commit -m <span class="hljs-string">&quot;Add project description&quot;</spa
 <span class="hljs-comment"># View compact history</span>
 git <span class="hljs-built_in">log</span> --oneline
 </code></pre>
-<blockquote>
-<p><strong>Speaker notes</strong>: Show the difference between tracked and untracked files. Mention that <code>git add</code> does not save the file forever — it only moves it to staging. <code>git commit</code> is the permanent save.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="7" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-6-branching--working-in-parallel">Slide 6: Branching — Working in Parallel</h2>
@@ -149,9 +131,6 @@ git checkout main
 <span class="hljs-comment"># View all branches</span>
 git branch
 </code></pre>
-<blockquote>
-<p><strong>Speaker notes</strong>: Draw the branch diagram before running commands. Explain that <code>git checkout -b</code> is a shortcut for creating and switching. Let them see the file content change when switching branches.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="8" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-7-merging">Slide 7: Merging</h2>
@@ -170,9 +149,6 @@ git <span class="hljs-built_in">log</span> --oneline --graph --all
 <li>The histories of both branches are combined.</li>
 <li>Fast-forward merge if no conflict.</li>
 </ul>
-<blockquote>
-<p><strong>Speaker notes</strong>: Explain that <code>main</code> is the default branch name. If there is a conflict, show the conflict markers briefly but tell them it will be covered in the next session. Run <code>git log --graph</code> so they see the visual merge.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="9" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-8-remote-repositories">Slide 8: Remote Repositories</h2>
@@ -191,9 +167,6 @@ git push -u origin main
 <span class="hljs-comment"># Clone an existing repo (for students)</span>
 git <span class="hljs-built_in">clone</span> https://github.com/rostacik/git101superSample.git
 </code></pre>
-<blockquote>
-<p><strong>Speaker notes</strong>: This is the collaboration section. If time is short, focus on <code>clone</code> and <code>push</code>. Explain that after <code>-u origin main</code>, future pushes can be just <code>git push</code>. Show the sample repo as a real-world example.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="10" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-9-collaboration-exercise">Slide 9: Collaboration Exercise</h2>
@@ -214,9 +187,6 @@ git commit -m <span class="hljs-string">&quot;Add my name to contributors&quot;<
 </code></pre>
 </li>
 </ol>
-<blockquote>
-<p><strong>Speaker notes</strong>: Walk around the room. Most errors will be: not saving the file, not staging before commit, or typing the wrong branch name. Let them help each other.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="11" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-10-what-is-a-pull-request">Slide 10: What is a Pull Request?</h2>
@@ -228,9 +198,7 @@ git commit -m <span class="hljs-string">&quot;Add my name to contributors&quot;<
 <h3 id="workflow">Workflow</h3>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code>Push branch → Open PR on GitHub → Review → Merge
 </code></pre>
-<blockquote>
-<p><strong>Speaker notes</strong>: Show the GitHub interface briefly. Explain that in real teams, nobody pushes directly to <code>main</code>. The PR is the standard gate for quality.</p>
-</blockquote>
+
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="12" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-11-the-golden-rules">Slide 11: The Golden Rules</h2>
@@ -246,9 +214,6 @@ node_modules/
 *.exe
 .<span class="hljs-built_in">env</span>
 </code></pre>
-<blockquote>
-<p><strong>Speaker notes</strong>: These are the habits that separate beginners from professionals. Mention that <code>.gitignore</code> is a simple text file that tells Git what to skip.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="13" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-12-common-beginner-mistakes">Slide 12: Common Beginner Mistakes</h2>
@@ -283,9 +248,6 @@ node_modules/
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p><strong>Speaker notes</strong>: Reassure them that everyone makes these mistakes. Git is safe — you rarely lose committed work.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="14" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-13-what-we-skipped-on-purpose">Slide 13: What We Skipped (On Purpose)</h2>
@@ -296,9 +258,6 @@ node_modules/
 <li><code>git reflog</code> — recovery commands</li>
 <li>SSH key setup (use HTTPS for now)</li>
 </ul>
-<blockquote>
-<p><strong>Speaker notes</strong>: Acknowledge these exist. Tell them they are powerful but not needed for the first week. If they understand the 3-area model and branching, they can learn these later.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="15" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="slide-14-summary--homework">Slide 14: Summary &amp; Homework</h2>
@@ -317,9 +276,6 @@ node_modules/
 <li>Push to GitHub.</li>
 <li>Explore the repo history on GitHub.</li>
 </ol>
-<blockquote>
-<p><strong>Speaker notes</strong>: Encourage them to try it alone. If they can do the homework without slides, they understood the core idea.</p>
-</blockquote>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-theme="default" lang="en-US" data-marpit-pagination="16" style="--paginate:true;--theme:default;" data-marpit-pagination-total="17">
 <h2 id="appendix-cheat-sheet">Appendix: Cheat Sheet</h2>
@@ -351,7 +307,6 @@ git pull                         <span class="hljs-comment"># Download and merge
 <p><strong>Repository:</strong> <a href="https://github.com/rostacik/git101superSample">https://github.com/rostacik/git101superSample</a></p>
 <p>Use this repo as the collaboration target for the exercise in Slide 9.</p>
 <blockquote>
-<p><strong>Speaker notes</strong>: Make sure the repo is public and has a simple README. Consider adding a <code>CONTRIBUTORS.md</code> file so students have a clear target to edit.</p>
 </blockquote>
 </section>
 <script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()})}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame(()=>{t.style.display=""}))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=Symbol(),l=()=>o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o);let c;const d="marpitSVGPolyfill:setZoomFactor,",h=Symbol(),g=Symbol();const p=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[v]:[],i={then:e=>(t?(async()=>{if(void 0===c){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise(t=>{i.addEventListener("load",()=>t())});i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),c=e.getImageData(5,5,1,1).data[3]<128}return c})().then(t=>{null==e||e(t?[v]:[])}):null==e||e([]),i)};return Object.assign(e,i)};let m,u;function v(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(d)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(u=i)}}catch(t){console.error(t)}}));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||u||t.currentScale||1;m!==a&&(m=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}}),!1!==n&&Array.from(e.querySelectorAll("iframe"),({contentWindow:t})=>{null==t||t.postMessage(`${d}${n}`,"null"===window.origin?"*":window.origin)})}function w({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[h])return t[h];let e=!0;const i=()=>{e=!1,delete t[h]};Object.defineProperty(t,h,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await p()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}m=1,u=void 0;const b=Symbol(),y=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[a];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,o=t[n].proto();l()&&o!==HTMLElement?i||customElements.define(s,r(o,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach(t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)}))}window[a]=!0})(e),e[b])return e[b];const i=w({target:e}),n=()=>{i(),delete e[b]},o=Object.assign(n,{cleanup:n,update:()=>y(e)});return Object.defineProperty(e,b,{configurable:!0,value:o}),o},f=document.currentScript;y(f?f.getRootNode():document)}();
